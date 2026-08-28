@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+ms-01-api-gateway/node_modules
+ms-02-auth/node_modules
+ms-03-admin/node_modules
+ms-04-user/node_modules
+
+ms-01-api-gateway/node_modules
+ms-02-auth/node_modules
+ms-03-admin/node_modules
+ms-04-user/node_modules
