@@ -1,0 +1,17 @@
+{
+  "name": "fs-ms-v1",
+  "version": "1.0.0",
+  "description": "Task Management Microservices",
+  "private": true,
+  "scripts": {
+    "gateway": "npm --prefix ms-01-api-gateway run dev",
+    "auth": "npm --prefix ms-02-auth run dev",
+    "admin": "npm --prefix ms-03-admin run dev",
+    "user": "npm --prefix ms-04-user run dev",
+
+    "dev": "concurrently -n GATEWAY,AUTH,ADMIN,USER -c blue,green,yellow,magenta \"npm run gateway\" \"npm run auth\" \"npm run admin\" \"npm run user\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
